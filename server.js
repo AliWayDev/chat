@@ -21,7 +21,7 @@ function shareRoomsInfo() {
 }
 
 io.on("connection", socket => {
-    shareRoomsInfo()
+    shareRoomsInfo() 
 
     socket.on(ACTIONS.JOIN, config => {
         const { room: roomID } = config;
